@@ -17,3 +17,5 @@ scores = np.vstack([x,np.ones_like(x),0.2 * np.ones_like(x)])
 plt.plot(x,softmax(scores).T, linewidth=2)
 plt.show()
 
+#if you multiply the scores by 10, the scores either get very large or very small
+#print (softmax(test_data * 10))
